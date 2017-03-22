@@ -22,7 +22,7 @@ for i in range(18):
     Data.append([])
 
 n_row = 0
-text = open(traincsv, 'r') 
+text = open(traincsv, 'r', encoding = "ISO-8859-1") 
 row = csv.reader(text , delimiter=",")
 for r in row:
     if n_row != 0:
@@ -86,7 +86,7 @@ for i in range(iteration):
 # In[6]:
 
 test_x = []
-test = open(testcsv, 'r') 
+test = open(testcsv, 'r', encoding = "ISO-8859-1") 
 rows = csv.reader(test , delimiter=",")
 m_row = 0
 for r in rows:
