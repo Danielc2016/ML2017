@@ -59,7 +59,7 @@ w[162] = 0.05
 w[155] = 0.05
 w[144] = 0.05
 lr = 0.104 # learning rate
-iteration = 55000
+iteration = 60000
 
 
 # In[5]:
@@ -125,9 +125,3 @@ print('done')
 # In[8]:
 
 print(np.sqrt(np.mean(np.square(np.dot(train_x,w)-train_y))))
-
-
-# In[ ]:
-
-
-
