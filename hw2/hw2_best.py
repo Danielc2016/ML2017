@@ -85,9 +85,9 @@ def featurescale(x):
 
 # In[7]:
 
-lr = 0.035
+lr = 0.038
 w = np.zeros(shape = (x_train.shape[1],1))
-rounds = 9000
+rounds = 8000
 londaa = 0.1
 w[3] = 100
 w[4] = 2
