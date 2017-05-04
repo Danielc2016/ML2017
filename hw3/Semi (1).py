@@ -45,6 +45,7 @@ x = Conv2D(32,(3,3), padding='same', activation='relu')(x)
 x = MaxPooling2D((2,2))(x)
 x = Conv2D(16,(3,3), padding='same', activation='relu')(input_img)
 x = Conv2D(16,(3,3), padding='same', activation='relu')(x)
+x = MaxPooling2D((2,2))(x)
 encoded = MaxPooling2D((2, 2), padding='same')(x)
 # encoder create
 x = Conv2D(16, (3, 3), activation='relu', padding='same')(encoded)
