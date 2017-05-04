@@ -20,7 +20,7 @@ import cv2
 
 # In[2]:
 
-model2 = load_model('near2best.h5')
+model2 = load_model('second_best.h5')
 
 
 # In[3]:
