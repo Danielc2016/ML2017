@@ -1,0 +1,6 @@
+#
+####### requirements for dim.sh #######
+#
+###### Requirements without Version Specifiers ######
+hub_toolbox.IntrinsicDim
+numpy
