@@ -5,7 +5,6 @@
 
 import math
 import pandas as pd
-import matplotlib.pyplot as plt
 from keras.callbacks import Callback, EarlyStopping, ModelCheckpoint
 import numpy as np
 from keras.layers import Embedding, Reshape, Merge, Dropout, Dense
