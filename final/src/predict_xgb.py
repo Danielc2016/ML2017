@@ -11,7 +11,7 @@ from datetime import timedelta
 from scipy import stats
 from sklearn.preprocessing import LabelEncoder
 
-NUM_ensemble = 11
+NUM_ENSEMBLE = 11
 X_TEST_PATH = sys.argv[1]
 
 
@@ -49,11 +49,11 @@ def load_data():
     return (X_test, test_ID)
 
 
-def main():
+def predict(output_filename='prediction_xgboost.csv'):
     (X_test, test_ID) = load_data()
 
-    prediction = np.zeros((NUM_ensemble, 14850))
-    for i in range(NUM_ensemble):
+    prediction = np.zeros((NUM_ENSEMBLE, 14850))
+    for i in range(NUM_ENSEMBLE):
         (X_test, test_ID) = load_data()
         xg_test = xgb.DMatrix(X_test)
 
@@ -86,7 +86,11 @@ def main():
     for i in range(len(status_group)):
         submission.loc[submission["status_group"] == i, "status_group"] = status_group[i]
 
-    submission.to_csv('prediction_xgboost.csv', index = False)
+    submission.to_csv(output_filename, index = False)
+
+
+def main():
+    predict()
 
 
 if __name__ == '__main__':

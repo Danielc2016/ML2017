@@ -46,7 +46,7 @@ def load_data():
     return (X_train, y_train)
 
 
-def main():
+def train():
     # make sure models/ dir exists
     if not os.path.exists('models/'):
         os.makedirs('models/')
@@ -105,6 +105,10 @@ def main():
         model_path = 'models/xgboost_' + str(i) + '.model'
         bst.save_model(model_path)
         print('(' + str(i + 1) + ' of 11) save model to : ' + model_path)
+
+
+def main():
+    train()
 
 
 if __name__ == '__main__':
