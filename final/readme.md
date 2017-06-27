@@ -12,10 +12,10 @@ https://www.drivendata.org/competitions/7/pump-it-up-data-mining-the-water-table
 
 ## Usage
 
-### Reproduce Our Best Leaderboard Score ($\approx 0.8260$)
+### Reproduce Our Best Leaderboard Score (about 0.8260)
 Using pre-trained models.
 ```
-python best.py data/X_train.csv data/y_train.csv data/X_test.csv
+python best.py data/X_test.csv
 ```
 
 ### Step by step
