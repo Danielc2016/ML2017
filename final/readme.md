@@ -63,3 +63,9 @@ python voting.py
 
 ## Requirements
 * python3
+* numpy
+* pandas
+* xgboost
+* scipy
+* scikit-learn
+* xgboost
